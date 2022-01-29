@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'idea'
+//    id 'com.github.johnrengelman.shadow' version '7.1.1'
+}
+
+group 'fr.dynalexotron.commandblocker'
+version '1.0.0'
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url "https://maven.enginehub.org/repo/"
+    }
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+/*
+shadowJar {
+    configurations = [project.configurations.runtimeClasspath]
+}*/
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+    compileOnly group: 'org.spigotmc', name: 'spigot', version: '1.8.8-R0.1-SNAPSHOT', changing: true
+}
