@@ -1,0 +1,10 @@
+disabled-for-op: true
+disabled-commands:
+  - about
+  - pl
+  - plugins
+  - bukkit:pl
+  - bukkit:plugins
+  - ver
+  - help
+  - bukkit:help
