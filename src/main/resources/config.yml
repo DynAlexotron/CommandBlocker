@@ -1,10 +1,10 @@
-disabled-for-op: true
+commands-disabled-for-op: true
 disabled-commands:
-  - about
-  - pl
-  - plugins
-  - bukkit:pl
-  - bukkit:plugins
-  - ver
-  - help
-  - bukkit:help
+  - /about
+  - /pl
+  - /plugins
+  - /bukkit:pl
+  - /bukkit:plugins
+  - /ver
+  - /help
+  - /bukkit:help

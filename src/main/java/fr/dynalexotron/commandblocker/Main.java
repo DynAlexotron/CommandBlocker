@@ -24,7 +24,7 @@ public class Main extends JavaPlugin implements Listener {
         String[] args = event.getMessage().split(" ");
 
         if(disabledCommands.stream().anyMatch(s -> s.equalsIgnoreCase(args[0]))) {
-            if(event.getPlayer().isOp() && !this.getConfig().getBoolean("disabled-for-op")) return;
+            if(event.getPlayer().isOp() && !this.getConfig().getBoolean("commands-disabled-for-op")) return;
             event.setCancelled(true);
             event.getPlayer().sendMessage(ChatColor.RED + "Erreur : " + ChatColor.WHITE + "Commande désactivée");
         }
